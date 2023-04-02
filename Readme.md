@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Марина Тюгай](https://up.htmlacademy.ru/htmlcss/36/user/2180225).
-* Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273)`Неизвестно`.
+* Наставник: [Виктория Никитина] (https://htmlacademy.ru/profile/id1217273).
 
 ---
 
