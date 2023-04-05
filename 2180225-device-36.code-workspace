@@ -6,6 +6,9 @@
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "2180225-device-36"
+		"liveServer.settings.multiRootWorkspaceName": "2180225-device-36",
+		"editor.formatOnPaste": true,
+		"editor.formatOnSave": true,
+		"editor.formatOnType": true
 	}
 }

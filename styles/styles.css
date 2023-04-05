@@ -1,31 +1,31 @@
 
 @font-face {
-  font-family: 'Rubik';
+  font-family: 'Rubik', sans-serif;
 font-style: normal;
 font-weight: 400;
-  src: url("../fonts/rubik/rubik-400.woff2") format("truetype");
-  font-display: swap;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+
   }
 
   @font-face {
-    font-family: 'Raleway';
+    font-family: 'Raleway', sans-serif;
 font-style: normal;
 font-weight: 800;
-    src: url("../fonts/raleway/raleway-800.woff2") format("truetype");
-    font-display: swap;
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+
 
   }
 
   @font-face {
-    font-family: 'Rubik';
+    font-family: 'Rubik', sans-serif;
 font-style: normal;
 font-weight: 700;
-    src: url("../fonts/rubik/rubik-700.woff2") format("truetype");
-    font-display: swap;
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+
   }
 
   @font-face {
-    font-family: "PT Sans Bolditalic";
+    font-family: "PT Sans Bolditalic", sans-serif;
     font-style: italic;
     font-weight: 700;
     src: url("../fonts/PT_Sans-Web-BoldItalic.ttf") format("truetype");
@@ -34,9 +34,163 @@ font-weight: 700;
 
   /* PT Sans Narrow */
   @font-face {
-    font-family: "PT Sans Narrow";
+    font-family: "PT Sans Narrow", sans-serif;
     font-style: normal;
     font-weight: 700;
     src: url("../fonts/pt-sans-narrow-bold.woff2") format("woff2");
     font-display: swap;
   }
+
+  html {
+    height: 100%;
+  }
+
+  body {
+
+
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 1440px;
+    font-family: 'Rubik', sans-serif;
+   font-style: normal;
+   font-weight: 400;
+   color: #000000;;
+   background: #FFFFFF;
+
+  }
+
+  .container {
+    width: 1160px;
+  }
+
+  .page-header {
+padding: 0;
+width: 1040px;
+background-color: rgba(255, 225, 127, 1);
+  color: #000000;
+  }
+
+.page-header-logo {
+
+  width: 145px;
+  height: 36px;
+
+}
+
+/* .navigation-list {
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+width: 1040px;
+
+} */
+/*Стили пользовательского меню*/
+.navigation-list {
+  display: flex;
+}
+
+.search-form {
+  display: flex;
+  position: relative;
+}
+
+
+.navigation-search-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0;
+  width: 1040px;
+  height: 186px;
+
+}
+
+.field {
+  width: 359px;
+  height: 40px;
+  display: flex;
+flex-direction: row;
+padding: 0 0 0 35px;
+gap: 16px;
+border: 2px solid #000000;
+border-radius: 50px 0 0 50px;
+opacity: 0.3;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+margin: 0;
+position: relative;
+  background-color: #FFE17F;
+}
+
+.search{
+  position: absolute;
+  top:13px;
+  left: 15px;
+}
+
+.button-search {
+
+background-color: #FFE17F;
+align-items: center;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+width: 160px;
+height: 40px;
+border: 2px solid #000000;
+border-radius: 0 50px 50px 0;
+margin: 0;
+padding: 0;
+}
+.button-to-come-in {
+  display: flex;
+flex-direction: row;
+padding: 0;
+margin: 0;
+gap: 12px;
+width: 81px;
+height: 30px;
+font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 30px;
+color: #000000;
+background-color: #FFE17F;
+border: 1px solid #FFE17F;
+
+}
+
+.enter-form {
+display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+
+  width: 231px;
+  height: 30px;
+
+}
+.button-compare {
+  width: 54px;
+    height: 30px;
+    font-family: 'Rubik';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 30px;
+      display: flex;
+      align-items: center;
+background-color: #FFE17F;
+      color: #000000;
+      border: 1px solid #FFE17F;
+}
+.bascet {
+  
+}
