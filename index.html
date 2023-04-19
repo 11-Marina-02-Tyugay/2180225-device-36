@@ -14,10 +14,9 @@
       href="https://htmlacademy.ru/intensive/htmlcss">
       HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
   <body>
-
-    <div class="container">
+<div class="header">
       <header class="page-header">
-        <nav class="navigation">
+          <section class="main-menu">
           <h1 class="visually-hidden">Пользовательское меню</h1>
           <a class="navigation-logo" href="index.html">
             <img class="page-header-logo" src="./images/logo.svg" width="145"
@@ -25,8 +24,10 @@
           </a>
           <div class="navigation-list">
             <div class="search-form">
+
               <img class="search" src="/images/VectorS.svg" width="16"
                 height="16" alt="Поиск">
+                <label for="navigation-search"></label>
               <input class="field" placeholder="Поиск по сайту" type="search"
                 name="navigation-search" id="navigation-search" required>
               <button class="button-search" type="submit">Найти</button>
@@ -42,40 +43,74 @@
             <button class="button-bascet" type="submit"><img class="bascet"
                 src="./images/bascet.png" alt="Корзина" width="16" height="14"
                 alt="icons-bascet">Корзина</button>
-        </div>
-        <div class="popover popover-cart">
-          <button class="popover-close-button button-light"><span class="visually-hidden">Закрыть</span>
-          </button>
-          <div class="popover-content">
-            <h2 class="popover-title">Корзина</h2>
+</div>
 
-          </div>
-          </div>
-       </nav>
-        <main class="main-index">
-          <ul class="catalog-list">
-            <li class="catalog-item">
-              <a href="index.html">Каталог товаров
-                <img class="Ellipse" src="./images/Ellipse.svg" width="50"
-                  height="50" alt="элипс">
-                <img class="plus" src="./images/Vector+.svg" width="16"
-                  height="16" alt="plus">
-              </a>
-            </li>
+    <form action="https://echo.htmlacademy.ru/courses" method="post">
 
-            <li class="catalog-item">
+<div class="select-wrapper">
+  <p>Каталог товаров</p>
+<select name="open-menu" class="open-menu">
+<option value="Виртуальная реальность">Виртуальная реальность</option>
+<option value="Моноподы для cелфи">Моноподы для cелфи</option>
+<option value="Экшн-камеры">Экшн-камеры</option>
+<option value="Фитнес-браслеты">Фитнес-браслеты</option>
+<option value="Умные часы">Умные часы</option>
+<option value="Квадрокоптеры">Квадрокоптеры</option>
+</select>
+
+
+<ul class="catalog-menu-list">
+  <li class="catalog-menu-item-1">
+
               <a href="">Доставка</a>
-            </li>
-            <li class="catalog-item">
+  </li>
+  <li class="catalog-menu-item-2">
               <a href="">Гарантия</a>
-            </li>
-            <li class="catalog-item">
+  </li>
+  <li class="catalog-menu-item-4">
               <a href="">Контакты</a>
-            </li>
-          </ul>
+   </li>
+</ul>
+</form>
+</div>
+              </nav>
+          </div>
 
-        </div>
-      </header>
+        <header class="popover popover-cart popover-open">
+ <section class="popover-content">
+            <h2 class="visually-hidden">Корзина</h2>
+<ul class="popover-catalog-list">
+  <li class="popover-catalog-item-1">
+    <img class="amateur-selfie-stick" src="./images/product-1-small 5.svg" width="39"
+                height="43" alt="Любительская селфи-палка">
+                <p class="popover-title-content-1">Любительская<br> селфи-палка</p>
+          <button class="popover-close-button button"><img src="./images/Vector-x.svg" alt="x" width="10px" height="10px">
+  <span class="visually-hidden">Закрыть</span>
+</button>
+              </li>
+  <li class="popover-catalog-item-2">
+    <img class="professional-selfie-stick" src="./images/product-1-small 5-1.svg" width="39"
+                height="43" alt="Профессиональная селфи-палка">
+                <p class="popover-title-content-2">Профессиональная<br> селфи-палка</p>
+                <button class="popover-close-button button button-light"><img src="./images/Vector-x.svg" alt="x" width="10px" height="10px">
+  <span class="visually-hidden">Закрыть</span>
+</button>
+</li>
+</ul>
+<div class="price-product">
+<p class="quantity">Товаров: 2</p>
+<p class="price">Сумма: 2000 ₽</p>
+</div>
+<div class="open-button">
+<button class="popover-open-button">Открыть корзину</button>
+</div>
+ </section>
+</header>
+
+
+
+
+
       <main class="main-container">
         <div class="page-container">
           <section class="product-card">
@@ -216,7 +251,7 @@
             <label for="appointment-email">
               <input class="field" placeholder="Ваш e-mail" type="email"
                 name="appointment-email"
-                id="appointment-email" required>
+                id="appointment-email" required disabled>
               <button class="button-appointment-button" type="submit">Подписаться</button>
               <label for="it's-free"></label>
               <input type="checkbox" name="it's-free" id="it's-free" checked>Это
